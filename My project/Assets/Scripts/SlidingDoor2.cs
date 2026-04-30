@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SlidingDoor : MonoBehaviour
+public class SlidingDoor2 : MonoBehaviour
 {
     public Transform player;
     public float openDistance = 5f;
@@ -22,9 +22,9 @@ public class SlidingDoor : MonoBehaviour
             //openPosition = transform.position + transform.right * slideAmount;
 
         if (slideLeft)
-            openPosition = transform.position + new Vector3(0, 0, -slideAmount);
+            openPosition = transform.position + new Vector3(-slideAmount, 0, 0 );
         else
-            openPosition = transform.position + new Vector3(0, 0, slideAmount);
+            openPosition = transform.position + new Vector3( slideAmount, 0, 0 );
 
     }
 
